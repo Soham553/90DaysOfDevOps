@@ -8,27 +8,29 @@
   - We will start one by one
 
   1. /bin:
+
         - permission bits for /bin are: lrwxrwxrwx, which points to /bin -> usr/bin
+          
         - It contains all the essential user commands.
     
-  2. /boot:
+  3. /boot:
          - permission bits for /boot are: drwxr-xr-x, which is a directory.
          - It contains Files and folders related to the Boot process.
          - efi, grub
 
-  3. /dev:
+  4. /dev:
          - permission bits for /dev are: drwxr-xr-x, directory.
          - It contains devices like character devices and block devices.
 
-  4. /etc:
+  5. /etc:
          - It contains .conf files for different services.
          - Manages all the OS functionality from networking to shutdown.
          - Eg. lvm.conf.
 
-  5. /home:
+  6. /home:
          - It contains all the non-root users.
 
-  6. /lib:
+  7. /lib:
          - permission bits for /lib are: lrwxrwxrwx, which is sysmbolic link lib -> usr/lib
          - It contains shared libraries and kernel modules.
 
