@@ -6,27 +6,32 @@ Include 2 log commands (journalctl -u <service>, tail -n 50, etc.)
 
 Process Commands:
 1. ps:  Displays a static snapshot of currently running processes.
+
    ps aux
    USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
-  root           1  0.0  1.4  22236 13352 ?        Ss   17:28   0:01 /sbin/ini
+  root           1  0.0  1.4  22236 13352?        Ss   17:28   0:01 /sbin/ini
   root           2  0.0  0.0      0     0 ?        S    17:28   0:00 [kthreadd
 
-2. ps -ef: Process relationship focus.
+3. ps -ef: Process relationship focus.
+   
    UID          PID    PPID  C STIME TTY          TIME CMD
-  root           1       0  0 17:28 ?        00:00:01 /sbin/init
-  root           2       0  0 17:28 ?        00:00:00 [kthreadd]
+  root           1       0  0 17:28?        00:00:01 /sbin/init
+  root           2       0  0 17:28?        00:00:00 [kthreadd]
 
-3. top: The  top  program  provides  a  dynamic real-time view of a running
+5. top: The  top  program  provides  a  dynamic real-time view of a running
        system.
-4. htop:pcp-htop - interactive process viewer.
+6. htop:pcp-htop - interactive process viewer.
 
 Service Commands:
 
 systemctl - Control the systemd system and service manager
 
-1. systemctl start Process_Name: Use to start particular process.
-2. systemctl status Pricess_Name: Use to see wheather process is active or not.
-   ● nginx.service - A high performance web server and a reverse proxy server
+1. systemctl start Process_Name: Use to start a particular process.
+   
+2. systemctl status Process_Name: Use to see wheather process is active or not.
+
+   
+   ● nginx.service - A high-performance web server and a reverse proxy server
      Loaded: loaded (/usr/lib/systemd/system/nginx.service; enabled; preset>
      Active: active (running) since Fri 2026-02-27 17:28:10 UTC; 1h 19min a>
        Docs: man:nginx(8)
@@ -38,14 +43,16 @@ systemctl - Control the systemd system and service manager
         CPU: 35ms
      CGroup: /system.slice/nginx.service
              ├─ 597 "nginx: master process /usr/sbin/nginx -g daemon on; ma>
-             ├─ 599 "nginx: worker process"
-             └─1135 "nginx: worker process"
+             ├─ 599 "nginx: worker process."
+             └─1135 "nginx: worker process."
   
    Feb 27 17:28:10 ip-172-31-38-27 systemd[1]: Starting nginx.service - A high>
    Feb 27 17:28:10 ip-172-31-38-27 systemd[1]: Started nginx.service - A high >
    
- 3.systemctl is-active: If the process is active it will return active.
+ 3. systemctl is-active: If the process is active, it will return active.
  4. systemctl list-units:  List units that systemd currently has in memory.
+
+    
      UNIT                                                                     >
       proc-sys-fs-binfmt_misc.automount                                        >
       sys-devices-pci0000:00-0000:00:04.0-nvme-nvme0-nvme0n1-nvme0n1p1.device  >
@@ -60,6 +67,7 @@ systemctl - Control the systemd system and service manager
       sys-devices-pnp0-00:04-00:04:0-00:04:0.0-tty-ttyS0.device                
 
  5. systemctl list-automounts:  List automount units currently in memory, ordered by mount
+    
            path.
     WHAT        WHERE                    MOUNTED IDLE TIMEOUT UNIT             >
     binfmt_misc /proc/sys/fs/binfmt_misc yes     -            proc-sys-fs-binfm>
