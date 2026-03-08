@@ -19,7 +19,7 @@
            - We can redirect the output of the command into a file using the '>>' operator.
            - '>>' append the output at the end of the existing content of the file.
 
-       ![Diagram](Screenshot 2026-03-08 124042.png)
+       ![Diagram](https://github.com/Soham553/90DaysOfDevOps/blob/master/2026/day-06/Screenshot%202026-03-08%20124042.png)
 
 2. Using Editor:
        - vim:
