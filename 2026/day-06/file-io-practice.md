@@ -1,23 +1,7 @@
-Create a file named notes.txt
-Write 3 lines into the file using redirection (> and >>)
-Use cat to read the full file
-Use the head and tail to read parts of the file
-Use a tee once to write and display at the same time
-Keep it short (8–12 lines total in the file)
-Suggested command flow:
-
-touch notes.txt
-echo "Line 1" > notes.txt
-echo "Line 2" >> notes.txt
-echo "Line 3" | tee -a notes.txt
-cat notes.txt
-head -n 2 notes.txt
-tail -n 2 notes.txt
-
 
 # Creating a new File
    - touch file_name
-   - This cmd will create a new file
+   - This command will create a new file
 
 
 # Writing in a file
@@ -35,6 +19,8 @@ tail -n 2 notes.txt
            - We can redirect the output of the command into a file using the '>>' operator.
            - '>>' append the output at the end of the existing content of the file.
 
+       ![Diagram](Screenshot 2026-03-08 124042.png)
+
 2. Using Editor:
        - vim:
            - If a file is present, it will open the file in the editor
@@ -42,6 +28,33 @@ tail -n 2 notes.txt
              
        - nano:
             - Same as vim
+
+# Basic Command for reading and writing in a file:
+
+    - cat cmd used to read the file in the current shell
+    - head: used to print contaent of the files as per our need
+         - -n: we can print several lines by passing the number instead of n
+         - There are many other flags present as per need.
+    - tail: output the last part of files
+          - -n: It will count from the bottom of the file.
+    - tee: read from standard input and write to standard output and files.
+          - -a: append to the given files, do not overwrite.
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
 
 
 
