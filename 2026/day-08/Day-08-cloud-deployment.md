@@ -24,8 +24,7 @@
   Step 7: Launch the instance.
 
 # Connecting instance through SSH
-
-      ![image](https://github.com/Soham553/90DaysOfDevOps/blob/master/2026/day-08/Screenshot%202026-03-08%20180945.png)
+   ![image](https://github.com/Soham553/90DaysOfDevOps/blob/master/2026/day-08/Screenshot%202026-03-08%20180945.png)
 
 - We can connect to the instance using the shell in Windows. Bash is best
 - While connecting to the server using SSH, the private key should be in the current working directory
@@ -38,8 +37,7 @@
 - connection string:  ssh -i "Name_of_server" Public_DNS
 
 # Starting A Service
-
-      ![image](https://github.com/Soham553/90DaysOfDevOps/blob/master/2026/day-08/Screenshot%202026-03-08%20180945.png)
+   ![image](https://github.com/Soham553/90DaysOfDevOps/blob/master/2026/day-08/Screenshot%202026-03-08%20180945.png)
 
    - Nginx
       - It is the process that we are going to start.
