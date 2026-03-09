@@ -54,6 +54,6 @@
 
      - After editing the inbound rule, we can visit it using the IPv4 of our instance on PORT 80
 
-           ![image](https://github.com/Soham553/90DaysOfDevOps/blob/master/2026/day-08/Screenshot%202026-03-09%20142010%20-%20Copy.png)
+       ![image](https://github.com/Soham553/90DaysOfDevOps/blob/master/2026/day-08/Screenshot%202026-03-09%20142010%20-%20Copy.png)
     
    
