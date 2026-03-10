@@ -21,17 +21,19 @@
       - We can change the permission bits of a particular directory or a file using the chmod cmd.
    
                       Octal Value 	Binary Representation	    Symbolic Representation	         Description
-                          7	              111                          rwx               	Read, write, and execute
-                          6	              110	                         rw-	                   Read and write
+                          7	              111                          rwx               	    Read, write, and execute
+                          6	              110	                         rw-	                  Read and write
                           5	              101                          r-x	                  Read and execute
-                          4	              100	                         r--	                      Read only
-                          3              	011	                         -wx	                    Write and execute
-                          2	              010	                         -w-	                       Write only
-                          1              	001	                         --x	                      Execute only
-                          0	              000	                         ---	                      No permissions
+                          4	             100	                         r--	                  Read only
+                          3              	011	                         -wx	                  Write and execute
+                          2	             010	                         -w-	                  Write only
+                          1              	001	                         --x	                  Execute only
+                          0	              000	                         ---	                  No permissions
         
        - chmod 400 Note.txt
+         
        - Then permission bits become:
+         
               - For owner: r--
               - For Group: ---
               - For others: ---
