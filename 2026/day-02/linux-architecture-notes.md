@@ -11,7 +11,7 @@
           
             Layer-4. Hardware
 
-                 ![Linux Architecture](https://github.com/Soham553/90DaysOfDevOps/blob/master/2026/day-02/Linuxarec.webp)
+          ![Linux Architecture](https://github.com/Soham553/90DaysOfDevOps/blob/master/2026/day-02/Linuxarec.webp)
 
    * Processes:
         - A process in Linux is nothing but a running command, application, or any other program.
