@@ -1,7 +1,8 @@
 # Linux Architecture, Processes, and "systemd."
 
    * The Linux-Based OS's Architecture:
-        - All know the onion analogy, we peel off each layer and give each layer as a Linux component.
+        - We all know the onion analogy, we peel off each layer and give each layer as a Linux component.
+          
             Layer-1. Operating System: the first layer, which provides a user-friendly interface to communicate with the kernel.
           
             Layer-2. Shell/Scripting: the interface to communicate with the kernel effectively.
